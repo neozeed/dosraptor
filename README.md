@@ -1,4 +1,6 @@
 # DOS Raptor
+![raptor](https://github.com/neozeed/dosraptor/assets/9031439/c089b68d-8396-41f7-b831-981a400c68b5)
+
 This is the original Raptor Call Of The Shadows DOS source code v1.2 with the Apogee Sound System and the
 DMX wrapper APODMX instead of the proprietary DMX library.
 
