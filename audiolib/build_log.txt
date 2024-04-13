@@ -1,0 +1,98 @@
+WATCOM Make Version 3.2
+Copyright by WATCOM International Corp. 1988, 1994. All rights reserved.
+WATCOM is a trademark of WATCOM International Corp.
+	wcc386 /zq /w4 /d1 /omaxnet /zp4 /5r /i=.\source .\source\gmtimbre -DLIBVER_ASSREV=19960116 /fo=AL_11\obj\gmtimbre
+	wcc386 /zq /w4 /d1 /omaxnet /zp4 /5r /zu /i=.\source .\source\al_midi -DLIBVER_ASSREV=19960116 /fo=AL_11\obj\al_midi
+.\source\al_midi.c(1143): Warning! W202: Symbol 'velocity' has been defined, but not referenced
+.\source\al_midi.c(1630): Warning! W112: Pointer truncated
+.\source\al_midi.c(1633): Warning! W112: Pointer truncated
+	wcc386 /zq /w4 /d1 /omaxnet /zp4 /5r /i=.\source .\source\awe32 -DLIBVER_ASSREV=19960116 /fo=AL_11\obj\awe32
+.\source\awe32.c(301): Warning! W202: Symbol 'InitMPU' has been defined, but not referenced
+	wcc386 /zq /w4 /d1 /omaxnet /zp4 /5r /i=.\source .\source\blaster -DLIBVER_ASSREV=19960116 /fo=AL_11\obj\blaster
+	wcc386 /zq /w4 /d1 /omaxnet /zp4 /5r /i=.\source .\source\debugio -DLIBVER_ASSREV=19960116 /fo=AL_11\obj\debugio
+	wcc386 /zq /w4 /d1 /omaxnet /zp4 /5r /i=.\source .\source\dma -DLIBVER_ASSREV=19960116 /fo=AL_11\obj\dma
+	wcc386 /zq /w4 /d1 /omaxnet /zp4 /5r /i=.\source .\source\dpmi -DLIBVER_ASSREV=19960116 /fo=AL_11\obj\dpmi
+	wcc386 /zq /w4 /d1 /omaxnet /zp4 /5r /i=.\source .\source\fx_man -DLIBVER_ASSREV=19960116 /fo=AL_11\obj\fx_man
+	wcc386 /zq /w4 /d2 /i=.\source .\source\gus -DLIBVER_ASSREV=19960116 /fo=AL_11\obj\gus
+	wcc386 /zq /w4 /d2 /i=.\source .\source\gusmidi -DLIBVER_ASSREV=19960116 /fo=AL_11\obj\gusmidi
+.\source\gusmidi.c(370): Warning! W202: Symbol 'velocity' has been defined, but not referenced
+	wcc386 /zq /w4 /d1 /omaxnet /zp4 /5r /i=.\source .\source\guswave -DLIBVER_ASSREV=19960116 /fo=AL_11\obj\guswave
+.\source\guswave.c(782): Warning! W301: No prototype found for 'gf1_dig_set_freq'
+	wcc386 /zq /w4 /d1 /omaxnet /zp4 /5r /i=.\source .\source\irq -DLIBVER_ASSREV=19960116 /fo=AL_11\obj\irq
+.\source\irq.c(143): Warning! W202: Symbol 'rgs' has been defined, but not referenced
+.\source\irq.c(144): Warning! W202: Symbol 'rfs' has been defined, but not referenced
+.\source\irq.c(145): Warning! W202: Symbol 'res' has been defined, but not referenced
+.\source\irq.c(152): Warning! W202: Symbol 'rdx' has been defined, but not referenced
+.\source\irq.c(150): Warning! W202: Symbol 'rsp' has been defined, but not referenced
+.\source\irq.c(153): Warning! W202: Symbol 'rcx' has been defined, but not referenced
+.\source\irq.c(147): Warning! W202: Symbol 'rdi' has been defined, but not referenced
+.\source\irq.c(151): Warning! W202: Symbol 'rbx' has been defined, but not referenced
+.\source\irq.c(149): Warning! W202: Symbol 'rbp' has been defined, but not referenced
+.\source\irq.c(154): Warning! W202: Symbol 'rax' has been defined, but not referenced
+	wcc386 /zq /w4 /d1 /omaxnet /zp4 /5r /i=.\source .\source\ll_man -DLIBVER_ASSREV=19960116 /fo=AL_11\obj\ll_man
+	wcc386 /zq /w4 /d1 /omaxnet /zp4 /5r /zu /i=.\source .\source\midi -DLIBVER_ASSREV=19960116 /fo=AL_11\obj\midi
+.\source\midi.c(595): Warning! W202: Symbol 'Task' has been defined, but not referenced
+	wcc386 /zq /w4 /d1 /omaxnet /zp4 /5r /i=.\source .\source\mpu401 -DLIBVER_ASSREV=19960116 /fo=AL_11\obj\mpu401
+	wcc386 /zq /w4 /d1 /omaxne /zp4 /5r /zu /i=.\source .\source\multivoc -DLIBVER_ASSREV=19960116 /fo=AL_11\obj\multivoc
+	tasm /t /zi /p /mx /w2 /i.\source /dLIBVER_ASSREV=19960116  .\source\mv_mix AL_11\obj\mv_mix
+	tasm /t /zi /p /mx /w2 /i.\source /dLIBVER_ASSREV=19960116  .\source\mv_mix16 AL_11\obj\mv_mix16
+	tasm /t /zi /p /mx /w2 /i.\source /dLIBVER_ASSREV=19960116  .\source\mvreverb AL_11\obj\mvreverb
+	wcc386 /zq /w4 /d1 /omaxne /zp4 /5r /zu /i=.\source .\source\music -DLIBVER_ASSREV=19960116 /fo=AL_11\obj\music
+	wcc386 /zq /w4 /d1 /omaxnet /zp4 /5r /i=.\source .\source\pas16 -DLIBVER_ASSREV=19960116 /fo=AL_11\obj\pas16
+	wcc386 /zq /w4 /d1 /omaxnet /zp4 /5r /i=.\source .\source\pitch -DLIBVER_ASSREV=19960116 /fo=AL_11\obj\pitch
+	wcc386 /zq /w4 /d1 /omaxnet /zp4 /5r /i=.\source .\source\sndscape -DLIBVER_ASSREV=19960116 /fo=AL_11\obj\sndscape
+	wcc386 /zq /w4 /d1 /omaxnet /zp4 /5r /i=.\source .\source\sndsrc -DLIBVER_ASSREV=19960116 /fo=AL_11\obj\sndsrc
+.\source\sndsrc.c(145): Warning! W202: Symbol 'Task' has been defined, but not referenced
+	wcc386 /zq /w4 /d1 /omaxnet /zp4 /5r /i=.\source .\source\task_man /fo=AL_11\obj\task_man
+.\source\task_man.c(43): Warning! W203: Symbol 'LIBVER_ASSREV' has not been declared
+.\source\task_man.c(64): Warning! W203: Symbol 'LIBVER_ASSREV' has not been declared
+.\source\task_man.c(326): Warning! W203: Symbol 'LIBVER_ASSREV' has not been declared
+	wcc386 /zq /w4 /d1 /omaxnet /zp4 /5r /i=.\source .\source\user -DLIBVER_ASSREV=19960116 /fo=AL_11\obj\user
+	echo ******************************************************************
+******************************************************************
+	echo
+ECHO is on.
+	echo Creating production library...
+Creating production library...
+	echo
+ECHO is on.
+	echo ******************************************************************
+******************************************************************
+	%create temp.lnk
+	for %i in (gmtimbre.obj al_midi.obj awe32.obj blaster.obj debugio.obj dma.obj dpmi.obj fx_man.obj gus.obj gusmidi.obj guswave.obj irq.obj ll_man.obj midi.obj mpu401.obj multivoc.obj mv_mix.obj mv_mix16.obj mvreverb.obj music.obj pas16.obj pitch.obj sndscape.obj sndsrc.obj task_man.obj user.obj) do %append temp.lnk -+AL_11\obj\%i
+	%append temp.lnk -+AL_11\obj\gmtimbre.obj
+	%append temp.lnk -+AL_11\obj\al_midi.obj
+	%append temp.lnk -+AL_11\obj\awe32.obj
+	%append temp.lnk -+AL_11\obj\blaster.obj
+	%append temp.lnk -+AL_11\obj\debugio.obj
+	%append temp.lnk -+AL_11\obj\dma.obj
+	%append temp.lnk -+AL_11\obj\dpmi.obj
+	%append temp.lnk -+AL_11\obj\fx_man.obj
+	%append temp.lnk -+AL_11\obj\gus.obj
+	%append temp.lnk -+AL_11\obj\gusmidi.obj
+	%append temp.lnk -+AL_11\obj\guswave.obj
+	%append temp.lnk -+AL_11\obj\irq.obj
+	%append temp.lnk -+AL_11\obj\ll_man.obj
+	%append temp.lnk -+AL_11\obj\midi.obj
+	%append temp.lnk -+AL_11\obj\mpu401.obj
+	%append temp.lnk -+AL_11\obj\multivoc.obj
+	%append temp.lnk -+AL_11\obj\mv_mix.obj
+	%append temp.lnk -+AL_11\obj\mv_mix16.obj
+	%append temp.lnk -+AL_11\obj\mvreverb.obj
+	%append temp.lnk -+AL_11\obj\music.obj
+	%append temp.lnk -+AL_11\obj\pas16.obj
+	%append temp.lnk -+AL_11\obj\pitch.obj
+	%append temp.lnk -+AL_11\obj\sndscape.obj
+	%append temp.lnk -+AL_11\obj\sndsrc.obj
+	%append temp.lnk -+AL_11\obj\task_man.obj
+	%append temp.lnk -+AL_11\obj\user.obj
+	for %i in (gf1_osf.lib pawe32.lib) do %append temp.lnk -+.\lib\%i
+	%append temp.lnk -+.\lib\gf1_osf.lib
+	%append temp.lnk -+.\lib\pawe32.lib
+	wlib AL_11\obj\AL_11.LIB /n /b @temp.lnk
+WATCOM Library Manager Version 3.0
+Copyright by WATCOM International Corp. 1988, 1994. All rights reserved.
+WATCOM is a trademark of WATCOM International Corp.
+	del temp.lnk
+	copy AL_11\obj\AL_11.LIB AL_11\AL_11.LIB
+        1 file(s) copied.

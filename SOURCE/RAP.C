@@ -1379,7 +1379,7 @@ VOID
    BYTE     temp [768];
    BYTE *   cmp;
    BOOL     rval = FALSE;
-
+/*
    if ( access ( fname, 0 ) != 0 )
       return ( rval );
 
@@ -1397,7 +1397,8 @@ VOID
       GLB_FreeItem ( FILE_ID_DIZ );
    else
       GLB_FreeItem ( FILE_ID_DIX );
-
+*/
+rval=TRUE;
    return ( rval );
 }
 

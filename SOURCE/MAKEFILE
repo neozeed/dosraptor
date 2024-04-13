@@ -25,8 +25,10 @@ AFLAGS  = -mx -ml
 .EXTENSIONS: .exe .rex .lib .obj .wbj .asm .c .for
 
 .BEFORE
-	@set INCLUDE=.;$(%watcom)\h;..\apodmx;..\gfx;
-	@set LIB=..\apodmx;..\gfx;..\audiolib\AL_109;
+#	@set INCLUDE=.;$(%watcom)\h;..\apodmx;..\gfx;
+#	@set LIB=..\apodmx;..\gfx;..\audiolib\AL_109;
+	@set INCLUDE=.;$(%watcom)\h;..\dmx\inc;;..\gfx;
+	@set LIB=..\dmx\api;..\gfx;
 	@set DOS4G=QUIET                      
 
 !include objdef.mif
@@ -39,6 +41,8 @@ all :   rap.exe .symbolic
 rap.exe : $(objs)
 	 %make temp.lnk    
 	 wlink @temp.lnk
+	wstrip rap.exe
+	4gwbind 4gwpro.exe rap.exe raptor.exe -V
 
 # implicit rules
 
@@ -49,8 +53,7 @@ temp.lnk : objdef.mif makefile
 	%append $^@ OPT MAP=test.map
 	%append $^@ OPT STACK=8192
 	%append $^@ OPT CASEEXACT
-	%append $^@ LIBRARY APODMX.lib
-        %append $^@ LIBRARY AL_109.lib 
+	%append $^@ LIBRARY DMX.lib
 	%append $^@ LIBRARY GFX.LIB 
 	%append $^@ LIB NOEMU387.LIB 
 	%append $^@ SYSTEM dos4g
@@ -73,3 +76,5 @@ temp.lnk : objdef.mif makefile
 clean : .SYMBOLIC
         del *.obj
         del *.exe
+	del *.err
+	del *.map
