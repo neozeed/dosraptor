@@ -25,10 +25,10 @@ AFLAGS  = -mx -ml
 .EXTENSIONS: .exe .rex .lib .obj .wbj .asm .c .for
 
 .BEFORE
-#	@set INCLUDE=.;$(%watcom)\h;..\apodmx;..\gfx;
-#	@set LIB=..\apodmx;..\gfx;..\audiolib\AL_109;
-	@set INCLUDE=.;$(%watcom)\h;..\dmx\inc;;..\gfx;
-	@set LIB=..\dmx\api;..\gfx;
+	@set INCLUDE=.;$(%watcom)\h;..\apodmx;..\gfx;
+	@set LIB=..\apodmx;..\gfx;..\audiolib\AL_109;
+#	@set INCLUDE=.;$(%watcom)\h;..\dmx\inc;;..\gfx;
+#	@set LIB=..\dmx\api;..\gfx;
 	@set DOS4G=QUIET                      
 
 !include objdef.mif
@@ -53,7 +53,8 @@ temp.lnk : objdef.mif makefile
 	%append $^@ OPT MAP=test.map
 	%append $^@ OPT STACK=8192
 	%append $^@ OPT CASEEXACT
-	%append $^@ LIBRARY DMX.lib
+	%append $^@ LIBRARY AL_109.LIB
+	%append $^@ LIBRARY APODMX.LIB
 	%append $^@ LIBRARY GFX.LIB 
 	%append $^@ LIB NOEMU387.LIB 
 	%append $^@ SYSTEM dos4g
